@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "browserfy": "^1.0.0",
+    "sweetalert2": "^11.3.10",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
