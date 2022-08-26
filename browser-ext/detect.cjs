@@ -5,7 +5,7 @@ const urlWindow = Wdw.location.href; // mengambil URL web yang sedang diakses
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 let prediction = "";
 var xhr = new XMLHttpRequest();
-var url = "https://7d35-35-186-174-124.ngrok.io/predict";
+var url = "https://7ea5-35-237-222-61.ngrok.io/predict";
 const detectSqlInject = () => {
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -16,8 +16,8 @@ const detectSqlInject = () => {
         if(prediction == 'sql injection')
         {
             swal.fire({
-                title: "Bahaya",
-                html: "Inputan anda dideteksi bersifat SQL Injection <br />",
+                title: "Danger",
+                html: "Your input has been detected as SQL Injection <br />",
                 icon: "warning",
                 confirmButtonText: "Tutup",
                 timer: 3000,
